@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/platforma/static/css/main.e0032246.css",
+    "main.js": "/platforma/static/js/main.830bc4de.js",
+    "static/media/main-background.png": "/platforma/static/media/main-background.48d75af196399c1f0529.png",
+    "static/media/visible.png": "/platforma/static/media/visible.35db318d7104faec8e26.png",
+    "static/media/logo.svg": "/platforma/static/media/logo.5695ac1a31955b19fd9e.svg",
+    "static/media/official-platform.svg": "/platforma/static/media/official-platform.1a849e9fb3d982c2291f.svg",
+    "static/media/instructions.svg": "/platforma/static/media/instructions.28c9c6958084a7d284a25d55a7f6d49e.svg",
+    "static/media/notificationIcon.svg": "/platforma/static/media/notificationIcon.fabd9085546128528d67.svg",
+    "static/media/courses.svg": "/platforma/static/media/courses.a0d91cbfbbbb1e6356c54589921afba7.svg",
+    "static/media/support-manager.svg": "/platforma/static/media/support-manager.2f5cd5d4da2be3c226c787a999681ba3.svg",
+    "static/media/pin-black.svg": "/platforma/static/media/pin-black.ac45af68410aa8d2e0d564e40f1b13a1.svg",
+    "static/media/pin.svg": "/platforma/static/media/pin.f4baec78e1301670b29f41f7fcf1f34d.svg",
+    "static/media/editButtonIcon.svg": "/platforma/static/media/editButtonIcon.90ab71123a89879d04b670508ad6886d.svg",
+    "static/media/profile.svg": "/platforma/static/media/profile.dd0cd36be10a142068694053b696ccba.svg",
+    "static/media/about.svg": "/platforma/static/media/about.5fed3b3a10e359442b75063c673fba03.svg",
+    "static/media/close-open-accordion.svg": "/platforma/static/media/close-open-accordion.b9bfd73125651a5c80b11c5aec3bcec8.svg",
+    "static/media/home.svg": "/platforma/static/media/home.ee1fd5aee6ebca3d9a0a98911d1bb792.svg",
+    "static/media/icons-task-complete.svg": "/platforma/static/media/icons-task-complete.538c92818c59278d4ab0b245f13d3230.svg",
+    "static/media/basketIcon.svg": "/platforma/static/media/basketIcon.585f28cbe1250620297f.svg",
+    "static/media/logout.svg": "/platforma/static/media/logout.204c90c2f35b033f87937b8069071b28.svg",
+    "static/media/icons-task.svg": "/platforma/static/media/icons-task.1a376430327b06d04509a0747828af7d.svg",
+    "index.html": "/platforma/index.html",
+    "static/media/prevArrowIcon.svg": "/platforma/static/media/prevArrowIcon.d582c4788d44514371fe.svg",
+    "static/media/icons-clock.svg": "/platforma/static/media/icons-clock.4c4845bb2c7fbddd68dd5d9eba49746c.svg",
+    "main.e0032246.css.map": "/platforma/static/css/main.e0032246.css.map",
+    "main.830bc4de.js.map": "/platforma/static/js/main.830bc4de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e0032246.css",
+    "static/js/main.830bc4de.js"
+  ]
+}
