@@ -1,0 +1,69 @@
+@import "../../common/variables";
+
+.accordionSectionContainer {
+  @extend %container;
+  min-height: 350px;
+  position: relative;
+  padding: 28px;
+}
+
+.sectionSettingsButtons {
+  display: flex;
+  position: absolute;
+  right: 28px;
+  top: 18px;
+}
+
+.sharedOpenButtonAccordionSection {
+  display: flex;
+  span {
+    display: none;
+  }
+}
+
+.sharedInformButtonAccordionSection {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 10px;
+
+}
+
+.accordionItemTitle {
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #001C54;
+  border-bottom: 2px solid #7E8CA8;
+  padding-bottom: 16px;
+}
+
+.subItemList {
+  @extend %center;
+  flex-direction: column;
+  width: 98%;
+
+}
+
+.subItem {
+  position: relative;
+  width: 97%;
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  border-bottom: 1px solid #7E8CA8;
+  padding: 8px 30px;
+  &::before {
+    content: ' ';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    top: 40%;
+    left: 10px;
+  }
+}
+

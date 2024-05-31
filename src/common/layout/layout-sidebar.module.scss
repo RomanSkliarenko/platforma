@@ -1,0 +1,170 @@
+@import "../variables";
+
+
+.sidebarContainer {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  box-shadow: $box-shadow;
+}
+
+//========================================= left side of sidebar
+
+.sidebarLeftSide {
+  background-color: #C30000;
+  width: 40px;
+  padding-top: 100px;
+  padding-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.pinSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pinSectionText {
+  width: 40px;
+  height: 117px;
+  margin-top: 20px;
+  background-image: url('../../images/sidebar/official-platform.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logout {
+  li:nth-child(1) {
+    margin-bottom: 40px;
+  }
+}
+//========================================= right side of sidebar
+
+.sidebarRightSide {
+  width: 148px;
+  transition: transform 0.5s ease;
+  z-index: 0;
+  padding-top: 100px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightSideUnpinButtonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 13px;
+  pointer-events: none;
+
+}
+.hidden {
+  position: absolute;
+  transform: translateX(-188px); /* Смещаем правый блок за пределы вьюпорта */
+}
+
+.sidebarUserInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  padding-top: 10px;
+  .userAvatar {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .userName {
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+  .userCourseInfo {
+    display: flex;
+    align-items: center;
+    font-family: Inter, serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12.1px;
+    text-align: center;
+    color: #C7C6C6;
+    margin-top: 6px;
+    .divideLine {
+      width: 1px;
+      height: 15px;
+      border: 1px solid #C7C6C6 ;
+      margin: 0 5px;
+    }
+  }
+}
+
+.sidebarRightSideNavigationList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13px;
+}
+
+.sidebarRightSideNavigationItem{
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  &:hover {
+    color: #D00000;
+    cursor: pointer;
+  }
+}
+.home {
+  background-color: #fff;
+}
+
+.courses {
+  background-color: #fff;
+}
+
+//.sidebarRightSideLogoutMenu {
+//  display: flex;
+//  flex-direction: column;
+//  .supportManagerText {
+//    padding-left: 13px;
+//
+//    font-family: Roboto, serif;
+//    font-size: 14px;
+//    font-weight: 600;
+//    line-height: 28px;
+//    margin-bottom: 36px;
+//  }
+//  .logoutMenu {
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    .logoutMenuImage {
+//      width: 40px;
+//      height: 40px;
+//      background-image: url('../../images/sidebar/logout-menu-button-image.svg');
+//      background-repeat: no-repeat;
+//      background-size: cover;
+//    }
+//    .logoutMenuText {
+//      font-family: Roboto, serif;
+//      font-size: 14px;
+//      font-weight: 600;
+//      line-height: 28px;
+//    }
+//  }
+//
+//}

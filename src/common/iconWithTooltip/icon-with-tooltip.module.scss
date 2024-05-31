@@ -1,0 +1,47 @@
+//@import "../../components/progressSection/progress-section.module";
+//@import "../../components/userDataFormSection/user-data-form-section.module";
+
+
+.componentContainer {
+  display: flex;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%iconBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sharedButton {
+  @extend %iconBackground;
+
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  &:hover + .editButtonTooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.editButtonTooltip {
+  font-family: Inter, serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.1px;
+  color: #7E8CA8;
+  box-shadow: 0 0 4px 0 #0000001F;
+  margin-right: 6px;
+  transition: opacity 0.9s ease-in-out, visibility 0.9s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 4px;
+}

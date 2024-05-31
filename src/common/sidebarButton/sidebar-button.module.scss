@@ -1,0 +1,22 @@
+//@import "../layout/layout-sidebar.module";
+
+
+
+.sidebarMenuOptionsButton {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+  outline: none;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  padding: 2px;
+  border: 1px solid transparent;
+  pointer-events: all;
+  //background-color: rebeccapurple;
+
+  &:hover {
+    border-color: #FFFFFF ;
+  }
+}

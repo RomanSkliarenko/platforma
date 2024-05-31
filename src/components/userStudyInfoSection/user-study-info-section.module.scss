@@ -1,0 +1,51 @@
+@import "../../common/variables";
+
+.itemsContainer {
+  display: flex;
+  width: 100%;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+
+
+.item {
+  width: 287px;
+  height: 102px;
+  box-shadow: $box-shadow;
+  background-color: rgba(252, 252, 252, 0.65);
+  display: flex;
+  align-items: center;
+}
+
+.itemIcon {
+  width: 48px;
+  height: 48px;
+  margin: 27px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.itemInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 2px solid #7E8CA8 ;
+  padding-left: 24px;
+  height: 54px;
+  .itemInfoCount {
+    font-family: Roboto, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #001C54;
+  }
+  .itemInfoName {
+    font-family: Roboto, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    color: #7E8CA8;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,139 @@
+@import "../variables";
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  height: 64px;
+  background-color: $primary-bg-color;
+  z-index: 2;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 143.06px;
+  height: 35.83px;
+  background-image: url('../../images/logo.svg');
+  cursor: pointer;
+}
+
+.headerMenu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.prevButton {
+  cursor: pointer;
+  margin-left: 20px;
+  border-left: 1px solid #001C54;
+  display: flex;
+  align-items: center;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+
+  .prevButtonArrow {
+    margin: 0 10px;
+    width: 10px;
+    height: 10px;
+    background-image: url('../../images/header/prevArrowIcon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.dateInfo {
+  user-select: none;
+  width: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+  color: #001C54;
+  opacity: 50%;
+}
+
+.userNotification {
+  display: flex;
+  align-items: center;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+
+  .notificationButton {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url('../../images/header/notificationIcon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .userShortInfo {
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    .userAvatar {
+      margin: 0 10px 0 17px;
+      width: 36px;
+      height: 36px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
+  }
+}
+
+.userBalance {
+  cursor: pointer;
+  width: 126px;
+  height: 38px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  opacity: 50%;
+  background-color: #ECECEC;
+;
+
+  .basket {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../images/header/basketIcon.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+
+
+
+

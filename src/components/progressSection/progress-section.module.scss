@@ -1,0 +1,152 @@
+@import "../../common/variables";
+
+.mainProgressContainer {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.gradePointAverage, .yourProgress {
+  @extend %center;
+  padding-top: 35px;
+  position: relative;
+  width: 268px;
+  height: 332px;
+  box-shadow: $box-shadow;
+  background-color: rgba(252, 252, 252, 0.65);
+}
+
+.containerName {
+  position: absolute;
+  width: 204px;
+  top: 0;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #7E8CA8;
+}
+
+.yourProgress {
+  margin-top: 20px;
+}
+
+%circle {
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 0px #0000001F;
+  @extend %center;
+}
+
+.circleBase {
+  @extend %circle;
+  width: 204px;
+  height: 204px;
+}
+
+.circlePercentBase {
+  @extend %circle;
+  width: 182px;
+  height: 182px;
+}
+
+.circlePercentToCenter {
+  @extend %circle;
+  width: 162px;
+  height: 162px;
+}
+
+.circleCenter {
+  @extend %circle;
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 140px;
+  background-color: #FFFFFF;
+
+  .containerSubTitle {
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: #7E8CA8;
+  }
+  .containerCount {
+    margin-top: 5px;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+
+  }
+
+}
+
+.gradePointAverage {
+  .circleBase {
+    background-color: rgba(217, 217, 217, 0.2);
+  }
+  .circlePercentToCenter {
+    background-color: rgba(217, 217, 217, 0.2);
+  }
+  .circlePercentBase {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  svg circle:nth-child(2) {
+    stroke: #FCC400;
+    stroke-dashoffset: calc(540 - (540 * 75) / 100); /* Обновленное значение для 75% заполнения */
+  }
+}
+
+.yourProgress {
+  .circleBase {
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .circlePercentToCenter {
+    background-color: rgba(217, 217, 217, 1);
+  }
+  .circlePercentBase {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  svg circle:nth-child(2) {
+    stroke: #39BA6D;
+    stroke-dashoffset: calc(540 - (540 * 75) / 100); /* Обновленное значение для 90% заполнения */
+  }
+}
+
+//=============================
+
+svg {
+  position: absolute;
+  left: 41px;
+  top: 90px;
+}
+
+svg circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg) translate(-193px, -7px);
+  &:nth-child(2) {
+    stroke-dasharray: 540; /* Новое значение для окружности радиуса 86 */
+  }
+}
+
+
+.sharedInformButtonProgressSection {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  bottom: 16px;
+  right: 16px;
+
+  span {
+    width: 193px;
+    height: 32px;
+  }
+}
+
+

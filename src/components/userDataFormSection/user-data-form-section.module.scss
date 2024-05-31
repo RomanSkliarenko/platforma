@@ -1,0 +1,109 @@
+@import "../../common/variables";
+
+.mainPageContainer {
+  min-width: 894px;
+}
+
+.userProfileSection {
+  position: relative;
+  min-width: 900px;
+  max-width: 1300px;
+  box-shadow: $box-shadow;
+  background-color: rgba(252, 252, 252, 0.65);
+  padding: 28px;
+  display: flex;
+}
+
+
+.userAvatarContainer {
+  width: 132px;
+  min-height: 158px;
+  padding-right: 16px;
+  border-right: 2px solid #7E8CA8;
+  .userAvatar {
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.userDataForm {
+  position: relative;
+  padding-left: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  .userFormDataItem{
+    position: relative;
+    width: 33%  ;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    label {
+      font-family: Inter, serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.94px;
+      color: #7E8CA8;
+      margin-bottom: 6px;
+    }
+    input {
+      font-family: Inter, serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.36px;
+      text-align: left;
+      border: 1px solid #7E8CA8;
+      padding: 5px;
+    }
+    input:disabled {
+      border: none;
+      padding-left: 0;
+    }
+    &:nth-child(4){
+      width: 66%;
+    }
+
+  }
+  .visiblePasswordButton {
+    position: absolute;
+    right: 17px;
+    top: 29px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../images/main/visible.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .userFormSubmitButton {
+    position: absolute;
+    cursor: pointer;
+    right: 150px;
+    bottom: 3px;
+    padding: 10px;
+    border: 1px solid #7E8CA8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    background-color: #ECECEC
+  }
+}
+
+.sharedInformButtonFormSection {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
