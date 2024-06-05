@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import style from '../../common/layout/layout-header.module.scss'
+import style from './header-date.module.scss'
 
 function HeaderDate() {
   const [currentDateTime, setCurrentDateTime] = useState(new Date())
@@ -13,7 +13,6 @@ function HeaderDate() {
   const formattedTime = currentDateTime.toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',
-    // second: '2-digit',
     hour12: false
   })
 

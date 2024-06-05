@@ -1,16 +1,6 @@
 import { createContext, ReactNode } from 'react'
 import user from '../../user-data/user-data'
 
-// const defaultUser: UserInterface = {
-//   nickname: '',
-//   firstName: '',
-//   lastName: '',
-//   email: '',
-//   password: '',
-//   phoneNumber: '',
-//   country: ''
-// }
-
 export const UserContext = createContext(user)
 
 type UserContextProviderType = {

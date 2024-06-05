@@ -1,13 +1,6 @@
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import styles from './icon-with-tooltip.module.scss'
-import style from '../sidebarButton/sidebar-button.module.scss'
-
-interface PropsInterface {
-  onClick?: () => void
-  tooltipText?: string
-  backgroundImage: string
-  customClassName?: string
-}
+import { PropsInterface } from './icon-with-tooltip-interface'
 
 const IconWithTooltip: React.FC<PropsInterface> = ({
   onClick,
@@ -16,13 +9,7 @@ const IconWithTooltip: React.FC<PropsInterface> = ({
   customClassName
 }) => {
   return (
-    <div
-      className={
-        customClassName
-          ? `${style.componentContainer} ${customClassName}`
-          : style.componentContainer
-      }
-    >
+    <div className={customClassName && customClassName}>
       <button
         type="button"
         className={styles.sharedButton}

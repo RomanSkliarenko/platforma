@@ -5,7 +5,9 @@ import HeaderDate from '../../components/headerDate/header-date'
 
 const LayoutHeader = () => {
   const user = useContext(UserContext)
-  console.log('header')
+  const notificationButtonOnclickHandler = () => {
+    console.log('notification')
+  }
   return (
     <div className={style.headerContainer}>
       <div className={style.logo}></div>
@@ -15,7 +17,11 @@ const LayoutHeader = () => {
         </button>
         <HeaderDate />
         <div className={style.userNotification}>
-          <button type="button" className={style.notificationButton} />
+          <button
+            type="button"
+            className={style.notificationButton}
+            onClick={notificationButtonOnclickHandler}
+          />
           <div className={style.userShortInfo}>
             <div
               className={style.userAvatar}

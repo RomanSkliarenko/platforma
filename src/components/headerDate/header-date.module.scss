@@ -1,0 +1,15 @@
+@import "../../common/variables";
+
+.dateInfo {
+  user-select: none;
+  @extend %center;
+  font-family: $font-inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #001C54;
+  opacity: 50%;
+  span:nth-child(1) {
+    margin-right: 10px;
+  }
+}

@@ -4,6 +4,7 @@ import IconWithTooltip from '../../common/iconWithTooltip/icon-with-tooltip'
 import informIcon from '../../images/main/editButtonIcon.svg'
 import closeOpenAccordionIcon from '../../images/main/close-open-accordion.svg'
 import { CSSTransition } from 'react-transition-group'
+import { iconsPreview, iconsCertificate } from '../../common/main-icon-reexp'
 
 function AccordionSection() {
   const accordionData = {
@@ -54,7 +55,25 @@ function AccordionSection() {
           <ul className={style.subItemList}>
             {accordionData.accData.map(item => (
               <li key={item.id} className={style.subItem}>
-                {item.title}
+                <div className={style.subItemContentWrapper}>
+                  {item.title}
+                  <div className={style.subItemButtonsWrapper}>
+                    <button>
+                      Preview
+                      <div
+                        className={style.subItemButton}
+                        style={{ backgroundImage: `url(${iconsPreview})` }}
+                      />
+                    </button>
+                    <button>
+                      Certificate
+                      <div
+                        className={style.subItemButton}
+                        style={{ backgroundImage: `url(${iconsCertificate})` }}
+                      />
+                    </button>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>

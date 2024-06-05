@@ -13,7 +13,6 @@ const SidebarButton: React.FC<ImageButtonProps> = ({
 }) => {
   return (
     <button
-      // className={style.sidebarMenuOptionsButton }
       className={
         customClassName
           ? `${style.sidebarMenuOptionsButton} ${customClassName}`

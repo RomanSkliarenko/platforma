@@ -2,9 +2,13 @@
 
 .accordionSectionContainer {
   @extend %container;
-  min-height: 350px;
   position: relative;
   padding: 28px;
+  max-height: 315px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .sectionSettingsButtons {
@@ -25,11 +29,10 @@
   display: flex;
   flex-direction: row-reverse;
   margin-right: 10px;
-
 }
 
 .accordionItemTitle {
-  font-family: Inter, serif;
+  font-family: $font-inter;
   font-size: 16px;
   font-weight: 600;
   line-height: 19.36px;
@@ -43,18 +46,36 @@
   @extend %center;
   flex-direction: column;
   width: 98%;
-
 }
 
 .subItem {
   position: relative;
   width: 97%;
-  font-family: Inter, serif;
+  font-family: $font-inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.94px;
   border-bottom: 1px solid #7E8CA8;
-  padding: 8px 30px;
+
+  button {
+    @extend %center;
+    cursor: pointer;
+    font-family: $font-inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #7E8CA8;
+    &:nth-child(1){
+      margin-right: 35px;
+    }
+    .subItemButton {
+      width: 14px;
+      height: 14px;
+      margin-left: 8px;
+      @extend %backgroundImage;
+
+    }
+  }
   &::before {
     content: ' ';
     position: absolute;
@@ -64,6 +85,25 @@
     border-radius: 50%;
     top: 40%;
     left: 10px;
+  }
+}
+
+.subItemContentWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 30px;
+  .subItemButtonsWrapper {
+    @extend %center;
+    visibility: hidden;
+  }
+
+  &:hover {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+  }
+  &:hover > .subItemButtonsWrapper {
+    visibility: visible;
   }
 }
 
